@@ -1,0 +1,222 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #ffffff;
+      color: #333333;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+
+    /* Header chung cho mọi trang */
+    .site-header {
+      background: #ffffff;
+      border-bottom: 1px solid #e0e0e0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
+
+    .header-top {
+      background: #f8f9fa;
+      padding: 8px 0;
+      font-size: 0.9rem;
+      color: #495057;
+    }
+
+    .header-main {
+      padding: 12px 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo a {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #212529;
+      text-decoration: none;
+    }
+
+    .nav-menu a {
+      margin-left: 24px;
+      color: #495057;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a.active {
+      color: #007bff;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .header-actions a {
+      color: #495057;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    .header-actions a:hover {
+      color: #007bff;
+    }
+
+    /* Nội dung chính (giữ nguyên như cũ nhưng thêm margin-top cho header) */
+    .main-wrapper {
+      padding: 30px 0;
+    }
+
+    .content-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 15px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .sidebar {
+      width: 260px;
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 20px;
+      border: 1px solid #e0e0e0;
+    }
+
+    .user-profile {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #e9ecef;
+      margin: 0 auto 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      color: #6c757d;
+      border: 2px solid #dee2e6;
+    }
+
+    .username {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #212529;
+    }
+
+    .menu-list {
+      list-style: none;
+    }
+
+    .menu-item a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 15px;
+      color: #495057;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    .menu-item a:hover,
+    .menu-item a.active {
+      background: #e9ecef;
+      color: #007bff;
+    }
+
+    .menu-item i {
+      width: 20px;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .logout a {
+      color: #dc3545 !important;
+      margin-top: 30px;
+    }
+
+    .main-content {
+      flex: 1;
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 25px;
+      border: 1px solid #e0e0e0;
+    }
+
+    .breadcrumb {
+      color: #6c757d;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+
+    .breadcrumb a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .welcome-box {
+      text-align: center;
+      padding: 80px 30px;
+      background: #f8f9fa;
+      border-radius: 8px;
+      border: 1px solid #ced4da;
+    }
+
+    .welcome-icon {
+      font-size: 3.5rem;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+
+    .welcome-title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #212529;
+    }
+
+    .welcome-text {
+      color: #495057;
+      max-width: 500px;
+      margin: 0 auto 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #007bff;
+      color: white;
+      padding: 10px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+
+    .btn:hover {
+      background: #0056b3;
+    }

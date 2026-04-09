@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thanh toán - Tech4Future</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="../css/checkout.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<header>
+  <div class="main-header">
+      <a href="../index.html" class="logo">Tech4Future 🖥️</a>
+      
+      <div class="search-bar">
+        <input type="text" placeholder="Bạn cần tìm gì? Laptop gaming, PC build, VGA, RAM...">
+      </div>
+
+      <div class="icons">
+        <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#"><i class="fas fa-user"></i></a>
+      </div>
+    </div>
+</header>
+
+ 
+        <div class="checkout-form">
+
+          <!-- Thông tin giao hàng -->
+          <div class="section">
+            <h2>Thông tin giao hàng</h2>
+            <form action="#" method="post">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullname">Họ và tên <span class="required">*</span></label>
+                  <input type="text" id="fullname" name="hoten" placeholder="Nguyễn Thị Ái Nhi" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Số điện thoại <span class="required">*</span></label>
+                  <input type="tel" id="phone" name="sodienthoai" placeholder="090xxxxxxx" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="address">Địa chỉ giao hàng <span class="required">*</span></label>
+                <input type="text" id="address" name="diachi" placeholder="Số nhà, đường, phường/xã, quận/huyện, TP. Hồ Chí Minh" required>
+              </div>
+
+              <div class="form-group">
+                <label for="notes">Ghi chú giao hàng (tùy chọn)</label>
+                <textarea id="notes" name="ghichu" rows="3" placeholder="Ví dụ: Giao sau 18h, gọi trước khi giao, để trước cửa..."></textarea>
+              </div>
+            </form>
+          </div>
+
+          <!-- Phương thức thanh toán -->
+          <div class="section">
+            <h2>Phương thức thanh toán</h2>
+            <div class="payment-options">
+              <label class="payment-method">
+                <input type="radio" name="payment" value="cod" checked>
+                <div class="method-content">
+                  <strong>Thanh toán khi nhận hàng (COD)</strong>
+                  <p>Thanh toán tiền mặt hoặc quẹt thẻ khi nhận hàng</p>
+                </div>
+              </label>
+
+              <label class="payment-method">
+                <input type="radio" name="payment" value="bank">
+                <div class="method-content">
+                  <strong>Chuyển khoản ngân hàng</strong>
+                  <p>Chuyển khoản qua tài khoản ngân hàng (hỗ trợ Internet Banking, VietQR)</p>
+                </div>
+              </label>
+            </div>
+          </div>
+           <div class="order-summary">
+          <h2>Tóm tắt đơn hàng</h2>
+
+          <div class="summary-items">
+            <div class="summary-item">
+              <div class="item-name">Alienware Area-51 Gaming Laptop RTX 50 Series × 1</div>
+              <div class="item-price">49,990,000 VND </div>
+            </div>
+            
+            <!-- Có thể thêm các sản phẩm khác -->
+          </div>
+
+          <div class="summary-fee">
+            <div class="fee-row">
+              <span>Tạm tính</span>
+              <span>49,990,000 VND</span>
+            </div>
+            <div class="fee-row">
+              <span>Phí vận chuyển (ước tính)</span>
+              <span>50,000 VND</span>
+            </div>
+          </div>
+
+          <div class="grand-total">
+            <span>Tổng cộng</span>
+            <span class="total-amount">50,049,000 VND</span>
+          </div>
+
+          <div class="policy-note">
+            Bằng cách đặt hàng, bạn đồng ý với 
+            <a href="#">Điều khoản dịch vụ</a> và 
+            <a href="#">Chính sách bảo mật</a> của chúng tôi.
+          </div>
+          <button type="submit" class="btn-place-order">
+            <i class="fas fa-check-circle"></i> Đặt hàng
+          </button>
+        </div>
+          <!-- Nút đặt hàng -->
+      
+        </div>
+<footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Tech4Future</h4>
+        <p>Chuyên linh kiện máy tính, PC Gaming, Workstation cao cấp.</p>
+        <p><i class="fas fa-map-marker-alt"></i> Quy Nhơn, Bình Định</p>
+        <p><i class="fas fa-phone"></i> 0986.552.233</p>
+        <p><i class="fas fa-envelope"></i> contact@tech4future.vn</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hỗ trợ khách hàng</h4>
+        <ul>
+          <li><a href="#">Hướng dẫn mua hàng</a></li>
+          <li><a href="#">Chính sách đổi trả</a></li>
+          <li><a href="#">Chính sách bảo hành</a></li>
+          <li><a href="#">Phương thức thanh toán</a></li>
+          <li><a href="#">Vận chuyển & Giao hàng</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Về chúng tôi</h4>
+        <ul>
+          <li><a href="#">Giới thiệu</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 Tech4Future. All rights reserved. | Thiết kế bởi Tech4Future
+    </div>
+  </footer>
+</body>
+</html>
