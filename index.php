@@ -218,5 +218,3 @@
 
 </body>
 </html>
-
-//van tai test  
