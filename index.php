@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tech4Future - Laptop, PC Gaming, Phụ Kiện Chính Hãng</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <!--Dong nay de test github-->
@@ -224,5 +224,6 @@
 //van tai test  
 //Hello World
 >>>>>>> cdc70d77d4ea2eeeacda20d4ac9c676e2ed3e8ec:index.html
+
 
 

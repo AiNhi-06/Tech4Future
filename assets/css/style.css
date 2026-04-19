@@ -1,9 +1,9 @@
 
  :root {
-      --primary: #007BFF;       /* xanh dương chính */
+   --primary: #007BFF;       /* xanh duong chinh */
       --primary-dark: #0056b3;
       --primary-light: #e3f2fd;
-      --accent: #ff6b00;        /* cam nổi bật khuyến mãi */
+   --accent: #ff6b00;        /* cam noi bat khuyen mai */
       --text: #333;
       --gray: #666;
       --bg: #f8f9fa;
@@ -142,7 +142,7 @@
 
     main { flex: 1; }
 
-    /* Banner - Đã sửa với nền PC RGB đẹp */
+    /* Banner - da sua voi nen PC RGB dep */
     .banner {
       background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)), 
                   url('https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&q=80&w=2000') center/cover no-repeat;

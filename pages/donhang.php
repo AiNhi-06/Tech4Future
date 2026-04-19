@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Đơn Hàng Của Tôi - Tech4Future</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link rel="stylesheet" href="../css/style.css">          <!-- CSS chung toàn web -->
-  <link rel="stylesheet" href="../css/donhang.css">       <!-- CSS riêng cho trang này -->
+  <link rel="stylesheet" href="../assets/css/style.css">          <!-- CSS chung toàn web -->
+  <link rel="stylesheet" href="../assets/css/donhang.css">       <!-- CSS riêng cho trang này -->
 </head>
 <body>
 

@@ -6,8 +6,8 @@
   <title>Giỏ hàng - Tech4Future</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/cart.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/cart.css" />
   
 </head>
 <body>
