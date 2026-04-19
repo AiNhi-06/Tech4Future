@@ -8,6 +8,36 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+<?php
+require_once __DIR__ . '/app/config/config.php';
+$sql = "
+    SELECT idSP, tenSP, gia, giaKM, hinhAnh
+    FROM SanPham
+    ORDER BY idSP DESC
+    LIMIT 8
+";
+$stmt = $pdo->query($sql);
+$products = $stmt->fetchAll();
+
+$detailMap = [
+    1 => 'products/Sager.html',
+    2 => 'products/alienware.html',
+    3 => 'products/futuristic.html',
+    4 => 'products/PC_Gaming.html',
+];
+
+function formatPriceVnd(int|float|null $price): string {
+    if ($price === null) return '';
+    return number_format((float)$price, 0, ',', '.') . 'đ';
+}
+?>
+
+
+
+
+
+
 <!--Dong nay de test github-->
   <!-- Top bar -->
   <div class="top-bar">
@@ -74,103 +104,42 @@
       <h2 style="text-align:center; color:var(--primary-dark); margin:30px 0;">Hot Deal - Sản phẩm đang giảm giá mạnh</h2>
       <div class="hot-deals">
 
-        <!-- Sản phẩm 1 -->
-          <a href="products/Sager.html" class="product-card-link">
-            <div class="product-card">
-              <img src="https://cdn.shopify.com/s/files/1/0228/7629/1136/files/section-1-np-9560r.jpg?v=1763933758" alt="Laptop Gaming SAGER">
-              <div class="product-info">
-                <h4>SAGER NP9560R Gaming Laptop RTX Cao Cấp</h4>
-                <div><span class="old-price">45.990.000đ</span></div>
-                <div class="price">29.990.000đ</div>
-                <div class="product-buttons">
-                  <button class="btn btn-add-to-cart"><i class="fas fa-cart-plus"></i> 
-                   Thêm vào giỏ
-                   </button>
-                  <button class="btn btn-detail">Chi tiết</button>
-                </div>
-              </div>
-            </div>
-          </a>
+    <?php foreach ($products as $p): ?>
+<?php
+$name = $p['tenSP'] ?? 'San pham';
+$gia = isset($p['gia']) ? (float)$p['gia'] : 0;
+$giaKm = isset($p['giaKM']) && $p['giaKM'] !== null ? (float)$p['giaKM'] : null;
+      $img = trim((string)($p['hinhAnh'] ?? ''));
+      if ($img === '') {
+          $img = 'assets/images/products/no-image.png';
+      } elseif (!preg_match('/^https?:\/\//i', $img) && !str_starts_with($img, 'assets/')) {
+          $img = 'assets/images/products/' . ltrim($img, '/');
+      }
 
-        <!-- Sản phẩm 2 -->
-        <a href="products/alienware.html" class="product-card-link">
-          <div class="product-card">
-            <img src="https://i.pcmag.com/imagery/articles/01oN03DkhXp3JIj5jBahM9G-1.fit_lim.size_1050x.jpg" alt="Alienware Laptop">
-            <div class="product-info">
-              <h4>Alienware Area-51 Gaming Laptop RTX 50 Series</h4>
-              <div><span class="old-price">68.000.000đ</span></div>
-              <div class="price">49.990.000đ</div>
-              <div class="product-buttons">
-                <button class="btn btn-add-to-cart"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</button>
-                <button class="btn btn-detail">Chi tiết</button>
-              </div>
-            </div>
-          </div>
-        </a>
+      $detailUrl = $detailMap[(int)$p['idSP']] ?? '#';
+    ?>
 
-        <!-- Sản phẩm 3 -->
-        <a href="products/futuristic.html" class="product-card-link">
-          <div class="product-card">
-            <img src="https://freepixel-prod.s3.amazonaws.com/preview/free-photos-a-sleek-and-modern-laptop-with-a-light-blue-screen-possibly-representing-an-advanced-or-futuristic-d-preview-100395574.jpg" alt="Futuristic Laptop">
-            <div class="product-info">
-              <h4>Laptop Gaming Futuristic Concept - RTX 4070</h4>
-              <div><span class="old-price">32.990.000đ</span></div>
-              <div class="price">21.490.000đ</div>
-              <div class="product-buttons">
-                <button class="btn btn-add-to-cart"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</button>
-                <button class="btn btn-detail">Chi tiết</button>
-              </div>
-            </div>
-          </div>
-        </a>
+    <a href="<?= htmlspecialchars($detailUrl) ?>" class="product-card-link">
+      <div class="product-card">
+        <img src="<?= htmlspecialchars($img) ?>" alt="<?= htmlspecialchars($name) ?>">
+        <div class="product-info">
+          <h4><?= htmlspecialchars($name) ?></h4>
 
-        <!-- Sản phẩm 4 -->
-        <a href="products/PC_Gaming.html" class="product-card-link">
-          <div class="product-card">
-            <img src="https://i.ytimg.com/vi/aJdxla_t1h0/maxresdefault.jpg" alt="PC RGB Build">
-            <div class="product-info">
-              <h4>PC Gaming RGB Custom Build Ryzen 7 + RTX 4080</h4>
-              <div><span class="old-price">55.000.000đ</span></div>
-              <div class="price">42.990.000đ</div>
-              <div class="product-buttons">
-                <button class="btn btn-add-to-cart"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</button>
-                <button class="btn btn-detail">Chi tiết</button>
-              </div>
-            </div>
-          </div>
-        </a>
+          <?php if ($giaKm !== null): ?>
+            <div><span class="old-price"><?= htmlspecialchars(formatPriceVnd($gia)) ?></span></div>
+            <div class="price"><?= htmlspecialchars(formatPriceVnd($giaKm)) ?></div>
+          <?php else: ?>
+            <div class="price"><?= htmlspecialchars(formatPriceVnd($gia)) ?></div>
+          <?php endif; ?>
 
-        <!-- Sản phẩm 5 -->
-        <a href="#" class="product-card-link">
-          <div class="product-card">
-            <img src="https://cdn.mos.cms.futurecdn.net/SvSFhmZrWHMoyYzFj8oZdf-1200-80.jpg" alt="Alienware Monitor">
-            <div class="product-info">
-              <h4>Alienware AW3821DW Ultrawide Curved Gaming Monitor</h4>
-              <div><span class="old-price">18.990.000đ</span></div>
-              <div class="price">12.990.000đ</div>
-              <div class="product-buttons">
-                <button class="btn btn-add-to-cart"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</button>
-                <button class="btn btn-detail">Chi tiết</button>
-              </div>
-            </div>
+          <div class="product-buttons">
+            <button class="btn btn-add-to-cart"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</button>
+            <button class="btn btn-detail">Chi tiết</button>
           </div>
-        </a>
-
-        <!-- Sản phẩm 6 -->
-        <a href="#" class="product-card-link">
-          <div class="product-card">
-            <img src="https://us.maxgaming.com/img/bilder/artiklar/1001028.jpg?m=1598958590&w=720" alt="Tai nghe Logitech G733">
-            <div class="product-info">
-              <h4>Logitech G733 Lightspeed Wireless Headset Blue</h4>
-              <div><span class="old-price">3.490.000đ</span></div>
-              <div class="price">2.190.000đ</div>
-              <div class="product-buttons">
-                <button class="btn btn-add-to-cart"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</button>
-                <button class="btn btn-detail">Chi tiết</button>
-              </div>
-            </div>
-          </div>
-        </a>
+        </div>
+      </div>
+    </a>
+  <?php endforeach; ?>
 
       </div>
     </main>
