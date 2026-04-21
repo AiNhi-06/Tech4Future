@@ -181,3 +181,6 @@ INSERT INTO `NhaCungCap` (`idNCC`, `tenNCC`, `diaChi`, `SDT`) VALUES
 
 INSERT INTO `SanPham` (`idSP`, `tenSP`, `chiTietSP`, `gia`, `tinhTrang`, `hinhAnh`, `baoHanh`, `soLuong`, `idNSX`, `idNCC`, `idCate`) VALUES 
 (1, 'Chuột Gaming Logitech G102', 'Chuột gaming DPI cao', 350000, 'Còn hàng', 'assets/images/g102.jpg', '24 tháng', 80, 2, 2, 1);
+
+
+
