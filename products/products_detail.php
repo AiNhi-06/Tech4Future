@@ -1,9 +1,9 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>Futuristic Concept Gaming Laptop</title>
-
+<title>Alienware Area-51 Gaming Laptop</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="stylesheet" href="../assets/css/products.css">
@@ -12,7 +12,7 @@
 <body>
 
 <header>
- <div class="main-header">
+  <div class="main-header">
       <a href="../index.html" class="logo">Tech4Future 🖥️</a>
       
       <div class="search-bar">
@@ -26,31 +26,29 @@
     </div>
 </header>
 
-<div class="container">
+<div class="container"> 
 
 <div class="product">
 
 <div class="product-image">
-<img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7">
 </div>
 
 <div class="product-info">
 
 <div class="product-name">
-Futuristic Concept Gaming Laptop RTX 4070
 </div>
 
 <div class="price">
-21,490,000 VND
 </div>
 
 <p>
-Laptop gaming thiết kế hiện đại phù hợp học tập, lập trình và chơi game.
 </p>
-
+<a href="../pages/thanh-toan.html">
 <button class="buy-btn">Mua ngay</button>
+</a>
+<a href ="../pages/cart.html">
 <button class="btn-cart">Thêm vào giỏ hàng</button>
-
+</a>
 </div>
 </div>
 
@@ -61,23 +59,23 @@ Laptop gaming thiết kế hiện đại phù hợp học tập, lập trình v�
 <table>
 
 <tr>
-<td>CPU</td>
-<td>Intel Core i7-13700H</td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
-<td>RAM</td>
-<td>16GB DDR5</td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
-<td>GPU</td>
-<td>NVIDIA RTX 4070</td>
+<td></td>
+<td></td>
 </tr>
 
 <tr>
-<td>Ổ cứng</td>
-<td>512GB NVMe SSD</td>
+<td></td>
+<td></td>
 </tr>
 
 </table>
@@ -120,3 +118,4 @@ Laptop gaming thiết kế hiện đại phù hợp học tập, lập trình v�
   </footer>
 </body>
 </html>
+
