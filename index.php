@@ -21,10 +21,10 @@ $stmt = $pdo->query($sql);
 $products = $stmt->fetchAll();
 
 $detailMap = [
-    1 => 'products/Sager.html',
-    2 => 'products/alienware.html',
-    3 => 'products/futuristic.html',
-    4 => 'products/PC_Gaming.html',
+  1 => 'products/products_detail.php?idSP=1',
+  2 => 'products/products_detail.php?idSP=2',
+  3 => 'products/products_detail.php?idSP=3',
+  4 => 'products/products_detail.php?idSP=4',
 ];
 
 function formatPriceVnd(int|float|null $price): string {
@@ -116,7 +116,7 @@ $giaKm = isset($p['giaKM']) && $p['giaKM'] !== null ? (float)$p['giaKM'] : null;
           $img = 'assets/images/products/' . ltrim($img, '/');
       }
 
-      $detailUrl = $detailMap[(int)$p['idSP']] ?? '#';
+      $detailUrl = $detailMap[(int)$p['idSP']] ?? ('products/products_detail.php?idSP=' . (int)$p['idSP']);
     ?>
 
     <a href="<?= htmlspecialchars($detailUrl) ?>" class="product-card-link">
@@ -196,3 +196,4 @@ $giaKm = isset($p['giaKM']) && $p['giaKM'] !== null ? (float)$p['giaKM'] : null;
 
 
 
+ 
