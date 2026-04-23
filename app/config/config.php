@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 $dbHost = '127.0.0.1';
-$dbName = 'Tech_4_Future';
+$dbName = 'tech4future';
 $dbUser = 'root';
 $dbPass = '';
 
