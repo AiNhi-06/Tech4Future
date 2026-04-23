@@ -11,29 +11,12 @@
   
 </head>
 <body>
-
-  <!-- Header & Top bar (giữ nguyên như các trang khác) -->
-  <div class="top-bar">
-    <div>Khuyến Mãi Sập WEB - Giảm đến 99% Mọi Sản Phẩm 🔥</div>
-    <div>
-      <a href="tel:0986552233">Hotline: 0986.552.233</a> |
-      <a href="#">Tài khoản</a> |
-      <a href="cart.html">Giỏ hàng</a> |
-      <a href="#">Đăng nhập</a>
-    </div>
-  </div>
-  <header>
-    <div class="main-header">
-      <a href="../index.html" class="logo">Tech4Future 🖥️</a>
-      <div class="search-bar">
-        <input type="text" placeholder="Bạn cần tìm gì? Laptop gaming, PC build...">
-      </div>
-      <div class="icons">
-        <a href="#"><i class="fas fa-user"></i></a>
-        <a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i></a>
-      </div>
-    </div>
-  </header>
+<?php
+$basePath = '../';
+$showTopBar = true;
+$showNavCat = false;
+require __DIR__ . '/../app/includes/header.php';
+?>
 
   <div class="container cart-page">
     <h1 class="cart-title">Giỏ hàng của bạn</h1>
@@ -111,40 +94,9 @@
 
   </div>
 
-  <!-- Footer (giữ nguyên như các trang khác) -->
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-col">
-        <h4>Tech4Future</h4>
-        <p>Chuyên linh kiện máy tính, PC Gaming, Workstation cao cấp.</p>
-        <p><i class="fas fa-map-marker-alt"></i> Quy Nhơn, Bình Định</p>
-        <p><i class="fas fa-phone"></i> 0986.552.233</p>
-        <p><i class="fas fa-envelope"></i> contact@tech4future.vn</p>
-      </div>
-
-      <div class="footer-col">
-        <h4>Hỗ trợ khách hàng</h4>
-        <ul>
-          <li><a href="#">Hướng dẫn mua hàng</a></li>
-          <li><a href="#">Chính sách đổi trả</a></li>
-          <li><a href="#">Chính sách bảo hành</a></li>
-          <li><a href="#">Phương thức thanh toán</a></li>
-          <li><a href="#">Vận chuyển & Giao hàng</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Về chúng tôi</h4>
-        <ul>
-          <li><a href="#">Giới thiệu</a></li>
-          <li><a href="#">Liên hệ</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      © 2026 Tech4Future. All rights reserved. | Thiết kế bởi Tech4Future
-    </div>
-  </footer>
+<?php
+$showZaloFloat = false;
+require __DIR__ . '/../app/includes/footer.php';
+?>
 </body>
 </html>
