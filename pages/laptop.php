@@ -3,26 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>PC Gaming - Tech4Future</title>
+        <title>Laptop - Tech4Future</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
         <link rel="stylesheet" href="../assets/css/style.css">
     </head>
     <body>
-        <div class="top-bar">
+      <div class="top-bar">
     <div>Khuyến Mãi Sập WEB - Giảm đến 99% Mọi Sản Phẩm 🔥</div>
     <div>
       <a href="#">Hotline: 090xxxxxxx</a> |
       <a href="#">Đơn hàng</a> |
       <a href="#">Giỏ hàng</a> |
-      <a href="login_full.html">Đăng nhập</a> |
-      <a href="register_full.html">Đăng ký</a>
+      <a href="../auth/login_full.php">Đăng nhập</a> |
+      <a href="../auth/register_full.php">Đăng ký</a>
     </div>
   </div>
 
   <!-- Header -->
   <header>
     <div class="main-header">
-      <a href="../index.html"" class="logo">Tech4Future 🖥️</a>
+      <a href="../index.php" class="logo">Tech4Future 🖥️</a>
       
       <div class="search-bar">
         <input type="text" placeholder="Bạn cần tìm gì? Laptop gaming, PC build, VGA, RAM...">
@@ -49,8 +49,8 @@
     <aside>
       <h3>Danh mục sản phẩm</h3>
       <ul class="cat-list">
-        <li><a href="laptop.html"><i class="fas fa-laptop"></i> Laptop</a></li>
-        <li><a href="pc.html"><i class="fas fa-desktop"></i> PC</a></li>
+        <li><a href="laptop.php"><i class="fas fa-laptop"></i> Laptop</a></li>
+        <li><a href="pc.php"><i class="fas fa-desktop"></i> PC</a></li>
         <li><a href="#"><i class="fas fa-hdd"></i> Ổ cứng, RAM, thẻ nhớ</a></li>
         <li><a href="#"><i class="fas fa-microchip"></i> Case, nguồn, tản nhiệt</a></li>
         <li><a href="#"><i class="fas fa-volume-up"></i> Loa, micro, webcam</a></li>
@@ -69,17 +69,33 @@
         <p>Laptop Gaming, PC Build RGB Cao Cấp, Phụ Kiện Chính Hãng - Giá Sốc Chỉ Có Tại Tech4Future!</p>
       </div>
 
-      <h2 style="text-align:center; color:var(--primary-dark); margin:30px 0;">PC</h2>
+      <h2 style="text-align:center; color:var(--primary-dark); margin:30px 0;">LAPTOP</h2>
       <div class="hot-deals">
-        
-        <!-- Sản phẩm 4 -->
-        <a href="../products/PC_Gaming.html" class="product-card-link">
+
+        <!-- Sản phẩm 1 -->
+          <a href="../products/Sager.html" class="product-card-link">
+            <div class="product-card">
+              <img src="https://cdn.shopify.com/s/files/1/0228/7629/1136/files/section-1-np-9560r.jpg?v=1763933758" alt="Laptop Gaming SAGER">
+              <div class="product-info">
+                <h4>SAGER NP9560R Gaming Laptop RTX Cao Cấp</h4>
+                <div><span class="old-price">45.990.000đ</span></div>
+                <div class="price">29.990.000đ</div>
+                <div class="product-buttons">
+                  <button class="btn btn-add-to-cart"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</button>
+                  <button class="btn btn-detail">Chi tiết</button>
+                </div>
+              </div>
+            </div>
+          </a>
+
+        <!-- Sản phẩm 2 -->
+        <a href="../products/alienware.html" class="product-card-link">
           <div class="product-card">
-            <img src="https://i.ytimg.com/vi/aJdxla_t1h0/maxresdefault.jpg" alt="PC RGB Build">
+            <img src="https://i.pcmag.com/imagery/articles/01oN03DkhXp3JIj5jBahM9G-1.fit_lim.size_1050x.jpg" alt="Alienware Laptop">
             <div class="product-info">
-              <h4>PC Gaming RGB Custom Build Ryzen 7 + RTX 4080</h4>
-              <div><span class="old-price">55.000.000đ</span></div>
-              <div class="price">42.990.000đ</div>
+              <h4>Alienware Area-51 Gaming Laptop RTX 50 Series</h4>
+              <div><span class="old-price">68.000.000đ</span></div>
+              <div class="price">49.990.000đ</div>
               <div class="product-buttons">
                 <button class="btn btn-add-to-cart"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</button>
                 <button class="btn btn-detail">Chi tiết</button>
@@ -88,6 +104,21 @@
           </div>
         </a>
 
+        <!-- Sản phẩm 3 -->
+        <a href="../products/futuristic.html" class="product-card-link">
+          <div class="product-card">
+            <img src="https://freepixel-prod.s3.amazonaws.com/preview/free-photos-a-sleek-and-modern-laptop-with-a-light-blue-screen-possibly-representing-an-advanced-or-futuristic-d-preview-100395574.jpg" alt="Futuristic Laptop">
+            <div class="product-info">
+              <h4>Laptop Gaming Futuristic Concept - RTX 4070</h4>
+              <div><span class="old-price">32.990.000đ</span></div>
+              <div class="price">21.490.000đ</div>
+              <div class="product-buttons">
+                <button class="btn btn-add-to-cart"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</button>
+                <button class="btn btn-detail">Chi tiết</button>
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
     </main>
   </div>

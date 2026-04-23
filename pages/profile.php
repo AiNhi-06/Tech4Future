@@ -13,15 +13,15 @@
 
   <header>
     <div class="main-header">
-      <a href="../index.html" class="logo">Tech4Future 🖥️</a>
+      <a href="../index.php" class="logo">Tech4Future 🖥️</a>
       
       <div class="search-bar">
         <input type="text" placeholder="Bạn cần tìm gì? Laptop gaming, PC build, VGA, RAM...">
       </div><
 
       <div class="icons">
-        <a href="../pages/cart.html" class="cart"><i class="fas fa-shopping-cart"></i></a>
-        <a href="../pages/profile.html"><i class="fas fa-user"></i></a>
+        <a href="../pages/cart.php" class="cart"><i class="fas fa-shopping-cart"></i></a>
+        <a href="../pages/profile.php"><i class="fas fa-user"></i></a>
       </div>
     </div>
 
@@ -30,7 +30,7 @@
         <a href="#">Xây dựng cấu hình</a>
         <a href="#">Hot deal</a>
         <a href="#">Thu cũ đổi mới</a>
-        <a href="../pages/trabaohanh.html">Tra cứu bảo hành</a>
+        <a href="../pages/trabaohanh.php">Tra cứu bảo hành</a>
       </div>
     </div>
   </header>

@@ -16,15 +16,15 @@
       <a href="#">Hotline: 0832108179</a> |
       <a href="#">Đơn hàng</a> |
       <a href="#">Giỏ hàng</a> |
-      <a href="auth/login_full.html">Đăng nhập</a> |
-      <a href="auth/register_full.html">Đăng ký</a>
+      <a href="auth/login_full.php">Đăng nhập</a> |
+      <a href="auth/register_full.php">Đăng ký</a>
     </div>
   </div>
 
   <!-- Header -->
   <header>
     <div class="main-header">
-      <a href="../index.html" class="logo">Tech4Future 🖥️</a>
+      <a href="../index.php" class="logo">Tech4Future 🖥️</a>
       
       <div class="search-bar">
         <input type="text" placeholder="Bạn cần tìm gì? Laptop gaming, PC build, VGA, RAM...">
@@ -41,7 +41,7 @@
         <a href="#">Xây dựng cấu hình</a>
         <a href="#">Hot deal</a>
         <a href="#">Thu cũ đổi mới</a>
-        <a href="tra-cuu-bao-hanh.html">Tra cứu bảo hành</a>
+        <a href="tra-cuu-bao-hanh.php">Tra cứu bảo hành</a>
       </div>
     </div>
   </header>
@@ -51,8 +51,8 @@
     <aside>
       <h3>Danh mục sản phẩm</h3>
       <ul class="cat-list">
-        <li><a href="pages/laptop.html"><i class="fas fa-laptop"></i> Laptop</a></li>
-        <li><a href="pages/pc.html"><i class="fas fa-desktop"></i> PC</a></li>
+        <li><a href="pages/laptop.php"><i class="fas fa-laptop"></i> Laptop</a></li>
+        <li><a href="pages/pc.php"><i class="fas fa-desktop"></i> PC</a></li>
         <li><a href="#"><i class="fas fa-hdd"></i> Ổ cứng, RAM, thẻ nhớ</a></li>
         <li><a href="#"><i class="fas fa-microchip"></i> Case, nguồn, tản nhiệt</a></li>
         <li><a href="#"><i class="fas fa-volume-up"></i> Loa, micro, webcam</a></li>
