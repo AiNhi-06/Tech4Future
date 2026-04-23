@@ -50,8 +50,8 @@ require __DIR__ . '/app/includes/header.php';
     <aside>
       <h3>Danh mục sản phẩm</h3>
       <ul class="cat-list">
-        <li><a href="pages/laptop.html"><i class="fas fa-laptop"></i> Laptop</a></li>
-        <li><a href="pages/pc.html"><i class="fas fa-desktop"></i> PC</a></li>
+        <li><a href="pages/laptop.php"><i class="fas fa-laptop"></i> Laptop</a></li>
+        <li><a href="pages/pc.php"><i class="fas fa-desktop"></i> PC</a></li>
         <li><a href="#"><i class="fas fa-hdd"></i> Ổ cứng, RAM, thẻ nhớ</a></li>
         <li><a href="#"><i class="fas fa-microchip"></i> Case, nguồn, tản nhiệt</a></li>
         <li><a href="#"><i class="fas fa-volume-up"></i> Loa, micro, webcam</a></li>
