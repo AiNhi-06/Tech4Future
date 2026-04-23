@@ -39,7 +39,7 @@
         <a href="#">Xây dựng cấu hình</a>
         <a href="#">Hot deal</a>
         <a href="#">Thu cũ đổi mới</a>
-        <a href="../pages/trabaohanh.html">Tra cứu bảo hành</a>
+        <a href="../pages/trabaohanh.php">Tra cứu bảo hành</a>
       </div>
     </div>
   </header>
@@ -73,7 +73,7 @@
       <div class="hot-deals">
 
         <!-- Sản phẩm 1 -->
-          <a href="../products/Sager.html" class="product-card-link">
+          <a href="../products/Sager.php" class="product-card-link">
             <div class="product-card">
               <img src="https://cdn.shopify.com/s/files/1/0228/7629/1136/files/section-1-np-9560r.jpg?v=1763933758" alt="Laptop Gaming SAGER">
               <div class="product-info">
@@ -89,7 +89,7 @@
           </a>
 
         <!-- Sản phẩm 2 -->
-        <a href="../products/alienware.html" class="product-card-link">
+        <a href="../products/alienware.php" class="product-card-link">
           <div class="product-card">
             <img src="https://i.pcmag.com/imagery/articles/01oN03DkhXp3JIj5jBahM9G-1.fit_lim.size_1050x.jpg" alt="Alienware Laptop">
             <div class="product-info">
@@ -105,7 +105,7 @@
         </a>
 
         <!-- Sản phẩm 3 -->
-        <a href="../products/futuristic.html" class="product-card-link">
+        <a href="../products/futuristic.php" class="product-card-link">
           <div class="product-card">
             <img src="https://freepixel-prod.s3.amazonaws.com/preview/free-photos-a-sleek-and-modern-laptop-with-a-light-blue-screen-possibly-representing-an-advanced-or-futuristic-d-preview-100395574.jpg" alt="Futuristic Laptop">
             <div class="product-info">
