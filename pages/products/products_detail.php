@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require_once __DIR__ . '/../app/config/config.php';
+require_once __DIR__ . '/../../app/config/config.php';
 
 function formatPriceVnd(int|float|null $price): string
 {
@@ -32,11 +32,11 @@ $specs = $specStmt->fetchAll();
 
 $img = trim((string)($product['hinhAnh'] ?? ''));
 if ($img === '') {
-    $img = '../assets/images/products/no-image.png';
+    $img = '../../assets/images/products/no-image.png';
 } elseif (str_starts_with($img, 'assets/')) {
-    $img = '../' . ltrim($img, '/');
-} elseif (!preg_match('/^https?:\/\//i', $img) && !str_starts_with($img, '../assets/')) {
-    $img = '../assets/images/products/' . ltrim($img, '/');
+    $img = '../../' . ltrim($img, '/');
+} elseif (!preg_match('/^https?:\/\//i', $img) && !str_starts_with($img, '../../assets/')) {
+    $img = '../../assets/images/products/' . ltrim($img, '/');
 }
 
 $gia = isset($product['gia']) ? (float)$product['gia'] : 0;
@@ -50,16 +50,16 @@ $giaKm = isset($product['giaKM']) && $product['giaKM'] !== null ? (float)$produc
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= htmlspecialchars((string)$product['tenSP']) ?> - Tech4Future</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/products.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/products.css">
 </head>
 
 <body>
 <?php
-$basePath = '../';
+$basePath = '../../';
 $showTopBar = true;
 $showNavCat = true;
-require __DIR__ . '/../app/includes/header.php';
+require __DIR__ . '/../../app/includes/header.php';
 ?>
 
     <div class="container">
@@ -88,10 +88,10 @@ require __DIR__ . '/../app/includes/header.php';
                 <p>
                     <?= htmlspecialchars((string)($product['chiTietSP'] ?? '')) ?>
                 </p>
-                <a href="../pages/thanh-toan.html">
+                <a href="../thanh-toan.php">
                     <button class="buy-btn">Mua ngay</button>
                 </a>
-                <a href="../pages/cart.php">
+                <a href="../cart.php">
                     <button class="btn-cart">Thêm vào giỏ hàng</button>
                 </a>
             </div>
@@ -121,7 +121,7 @@ require __DIR__ . '/../app/includes/header.php';
     </div>
 <?php
 $showZaloFloat = false;
-require __DIR__ . '/../app/includes/footer.php';
+require __DIR__ . '/../../app/includes/footer.php';
 ?>
 </body>
 

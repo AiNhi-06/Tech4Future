@@ -26,7 +26,7 @@ $showNavCat = $showNavCat ?? true;
 
     <div class="icons">
       <a href="<?= htmlspecialchars($basePath . 'pages/cart.php') ?>" class="cart"><i class="fas fa-shopping-cart"></i></a>
-      <a href="<?= htmlspecialchars($basePath . 'pages/profile.html') ?>"><i class="fas fa-user"></i></a>
+      <a href="<?= htmlspecialchars($basePath . 'pages/profile.php') ?>"><i class="fas fa-user"></i></a>
     </div>
   </div>
 
@@ -36,7 +36,7 @@ $showNavCat = $showNavCat ?? true;
       <a href="#">Xay dung cau hinh</a>
       <a href="#">Hot deal</a>
       <a href="#">Thu cu doi moi</a>
-      <a href="<?= htmlspecialchars($basePath . 'pages/trabaohanh.html') ?>">Tra cuu bao hanh</a>
+      <a href="<?= htmlspecialchars($basePath . 'pages/trabaohanh.php') ?>">Tra cuu bao hanh</a>
     </div>
   </div>
   <?php endif; ?>
